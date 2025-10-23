@@ -9,16 +9,16 @@
                 $mail->CharSet  = "utf-8";
                 $mail->Host = 'smtp.gmail.com';  //SMTP servers
                 $mail->SMTPAuth = true; // Enable authentication
-		    $nguoigui = 'annvh.24itb@vku.udn.vn';
-		    $matkhau = 'hsdv wntw mseg hlij';// mật khẩu của tài khoản annvh.24itb@vku.udn.vn
-		    $tennguoigui = 'AnNguyen';
+		    $nguoigui = 'ngocvietpham.dmxtp@gmail.com';
+		    $matkhau = 'mzyj cgtk sbzb edal';// mật khẩu của tài khoản annvh.24itb@vku.udn.vn
+		    $tennguoigui = 'Viet';
                 $mail->Username = $nguoigui; // SMTP username
                 $mail->Password = $matkhau;   // SMTP password
                 $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
                 $mail->Port = 465;  // port to connect to                
                 $mail->setFrom($nguoigui, $tennguoigui ); 
-                $to = "nguyenvanhoaian3004@gmail.com";
-                $to_name = "Hoaian";
+                $to = "vietpn.24ite@vku.udn.vn";
+                $to_name = "Ngocviet";
                 
                 $mail->addAddress($to, $to_name); //mail và tên người nhận
                // $mail->addAddress("nlquan@vku.udn.vn","lequan");
@@ -26,7 +26,7 @@
     $email_array = explode(",",$recipients);*/
                 $mail->isHTML(true);  // Set email format to HTML
                 $mail->Subject = 'xin chao ';      
-                $noidungthu = "<b>Chào bạn toi la annvh.24itb@vku.udn.vn!</b><br>Chúc suc khoe gap nhieu may man!" ;
+                $noidungthu = "<b>Chào bạn toi la ngocvietpham.dmxtp@gmail.com!</b><br>Chúc suc khoe gap nhieu may man!" ;
                 $mail->Body = $noidungthu;
                // $mail->AddAttachment("4.jpg","picture");
                 $mail->smtpConnect( array(

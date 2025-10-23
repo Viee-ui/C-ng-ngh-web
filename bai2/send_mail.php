@@ -27,11 +27,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 465; // Nếu dùng TLS thì là 587
 
         // Thông tin tài khoản Gmail của bạn
-        $mail->Username = 'annvh.24itb@vku.udn.vn'; 
-        $mail->Password = 'hsdv wntw mseg hlij'; // Mật khẩu ứng dụng (App password Gmail)
+        $mail->Username = 'ngocvietpham.dmxtp@gmail.com'; 
+        $mail->Password = 'mzyj cgtk sbzb edal'; // Mật khẩu ứng dụng (App password Gmail)
 
         // Người gửi
-        $mail->setFrom('annvh.24itb@vku.udn.vn', 'Nguyen Van Hoai An');
+        $mail->setFrom('ngocvietpham.dmxtp@gmail.com', 'Phạm Ngọc Việt');
 
         // Người nhận
         $mail->addAddress($to);

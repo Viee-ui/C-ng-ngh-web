@@ -19,13 +19,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['emails'])) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'annvh.24itb@vku.udn.vn';
-            $mail->Password = 'hsdv wntw mseg hlij'; // hoặc App Password
+            $mail->Username = 'ngocvietpham.dmxtp@gmail.com';
+            $mail->Password = 'mzyj cgtk sbzb edal'; // hoặc App Password
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 
             // Người gửi và người nhận
-            $mail->setFrom('annvh.24itb@vku.udn.vn', 'Nguyễn Văn Hoài An');
+            $mail->setFrom('ngocvietpham.dmxtp@gmail.com', 'Phạm Ngọc Việt');
             $mail->addAddress($email);
 
             // Nội dung email
